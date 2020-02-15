@@ -2,9 +2,23 @@ package com.fabio.cursomc;
 
 import java.io.Serializable;
 
+<<<<<<< HEAD
 public class Categoria implements Serializable {
 
 	private static final long serialVersionUID = 1L;
+=======
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+@Entity
+public class Categoria implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+>>>>>>> 7de0bfe67e9eb90e7bab805a63f068814c133bdc
 	private Integer id;
 	private String nome;
 	
